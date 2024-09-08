@@ -1,7 +1,6 @@
 
-import {average, sum} from './stats';
-import { expect, test, describe, it } from './testLib'
-import * as statsAsync from './statsAsync';
+import {average, sum} from '../stats';
+import * as statsAsync from '../statsAsync';
 
 describe("Syncronous tests", () => {
 
