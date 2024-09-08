@@ -16,6 +16,13 @@ describe("Syncronous tests", () => {
         
         expect( expected ).toBe( result );
     });
+
+    it("Averga should return 0 if array is empty", () => {
+        const result = average( [] );
+        const expected = 0;
+
+        expect( expected ).toBe( result );
+    });
 });
 
 describe( "Asyncronous tests", () => {
