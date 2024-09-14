@@ -1,3 +1,6 @@
 export function fizzBuzz (number:number){
-    return null;
+    if (number === 3) {
+        return 'fizz';
+    }
+    return number.toString();
 }
