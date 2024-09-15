@@ -18,4 +18,13 @@ describe('FizzBuzz', () => {
     it('returns fizz for any number divisible by three', () => {
         expect( fizzBuzz( 9 ) ).toBe('fizz')
     });
+    it('returns buzz for any number divisible by five', () => {
+        expect( fizzBuzz( 10 ) ).toBe('buzz')
+    });
+    it('returns fizzbuzz for any number divisible by fifteen', () => {
+        expect( fizzBuzz( 45 ) ).toBe('fizzbuzz')
+    });
+    it('returns number as a string for any number that is not divisible by three or five and greater than two', () => {
+        expect( fizzBuzz( 17 ) ).toBe('17')
+    });
 });

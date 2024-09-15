@@ -1,13 +1,15 @@
 export function fizzBuzz (number:number){
-    if ( number === 15 ) {
-        return 'fizzbuzz';
+    function isDivisibleBy(divisor:number){
+        return number % divisor === 0;
     }
-    if (number % 3 === 0) {
+    
+    if ( isDivisibleBy(15) ) {
+        return 'fizzbuzz';
+    } else if ( isDivisibleBy( 3 ) ) {
         return 'fizz';
-    } else if(number === 5){
+    } else if ( isDivisibleBy( 5 ) ){
         return 'buzz'
     }
 
-    
     return number.toString();
 }
